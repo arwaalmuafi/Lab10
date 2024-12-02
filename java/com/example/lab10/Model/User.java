@@ -38,7 +38,7 @@ public class User {
 
     @NotEmpty(message = "connote be null")
     @Pattern(regexp = "^(JOB_SEEKER|EMPLOYER)$", message = "Role must be either 'JOB_SEEKER' or 'EMPLOYER'.")
-    @Column(columnDefinition = "varchar (10) not null")
+    @Column(columnDefinition = "varchar (10) not null")//check doesnt work on  my version 
     private String role;
 
 }
